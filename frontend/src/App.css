@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding-top: 80px; /* adds space from top to push form below URL bar */
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 32px;
+  color: #38bdf8;
+  margin-bottom: 30px;
+}
