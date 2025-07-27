@@ -8,25 +8,25 @@ export const getSeatingChart = async () => {
   return response.data;
 };
 
-// Get the available seats categorized
+//  available seats categorized
 export const getAvailableSeats = async () => {
   const response = await axios.get(`${API_BASE}/available`);
   return response.data;
 };
 
-// Get all current bookings
+// Getting current bookings
 export const getBookings = async () => {
   const response = await axios.get(`${API_BASE}/bookings`);
   return response.data;
 };
 
-// Book a seat
+//book
 export const bookSeat = async (booking) => {
   const response = await axios.post(`${API_BASE}/book`, booking);
   return response.data;
 };
 
-// Cancel a booking
+// Cancel 
 export const cancelSeat = async (booking) => {
   const response = await axios.post(`${API_BASE}/cancel`, booking);
   return response.data;
