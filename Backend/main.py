@@ -5,10 +5,9 @@ from models import Flight
 
 app = FastAPI()
 
-# ✅ CORS middleware for frontend communication
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # Update if using a different frontend port
+    allow_origins=["http://localhost:3000"], 
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -22,7 +21,6 @@ class BookingRequest(BaseModel):
     name: str
     phone: str
 
-# 🚏 Routes
 
 @app.get("/seating")
 def get_seating():
