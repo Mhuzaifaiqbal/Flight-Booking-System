@@ -8,7 +8,7 @@ body {
 
 .app-container {
   min-height: 100vh;
-  padding-top: 80px; /* adds space from top to push form below URL bar */
+  padding-top: 80px; 
   padding-left: 16px;
   padding-right: 16px;
   box-sizing: border-box;
